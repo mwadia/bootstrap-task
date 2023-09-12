@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <title>test</title>
+  <link rel="stylesheet" href="css/custom.min.css" />
+</head>
+
+<body class="bg-main-background">
+  <!--! here -->
+  <div class="container">
+    <nav class="navbar mt-3 mb-2">
+      <div><img src="./images/logo.png" alt="" /></div>
+      <div class="d-flex gap-4">
+        <div class="d-flex">
+          <div><img src="./images/amerca-flag.png" alt="us flag" /></div>
+          <p class="text-dark mx-1">English</p>
+          <div class=""><img src="./images/arrow.png" alt="arro" /></div>
+        </div>
+        <div>
+          <img src="images/notifications.png" alt="notifications icon" />
+        </div>
+        <div class="d-flex gap-2">
+          <div>
+            <img src="images/profile-pic.png" alt="profile picture" />
+          </div>
+          <div><img src="./images/arrow.png" alt="arrow" /></div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="p-3 border border-gray rounded full-height">
+      <h6 class="mb-4">Withdraw</h6>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <div class="bg-blue-background p-3 border border-gray rounded d-flex justify-content-between">
+            <h6 class="my-5-sm">Your balance</h6>
+            <h6 class="fw-bold">16,027$</h6>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <input type="text" class="form-control p-3 border border-gray rounded" id="exampleInput"
+            placeholder="Amount You Want To Withdraw" />
+        </div>
+      </div>
+
+      <h6 class="my-4">Choose Saved Withdraw Methods</h6>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <div class="bg-blue-background p-3 rounded d-flex justify-content-between my-5-sm">
+            <div><img src="images/bank.png" alt="" /></div>
+            <div>
+              <p>Bank Name : Bank Name</p>
+              <p>Bank Address :2715 Ash Dr. San Jose</p>
+              <p>Owner : Owner</p>
+              <p>Swift Code : AAAA-BB-CC-123</p>
+              <p>IBAN : GB 12 ABCD 102030 12345678</p>
+            </div>
+            <div class="h-auto d-flex flex-column justify-content-between">
+              <div class="dropdown">
+                <button class="btn " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  <img src="images/dots.png" alt="dots" />
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                  <button class="dropdown-item"><i class="bi bi-pencil-square"></i> Edit</button>
+                  <button class="dropdown-item" data-toggle="modal" data-target="#myModal"><i class="bi bi-trash"></i>
+                    Delete</button>
+                </div>
+              </div>
+
+              <div><img src="images/red.png" alt="" /></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="bg-blue-background p-3 rounded d-flex justify-content-between h-100">
+            <div><img src="images/wallet.png" alt="" /></div>
+            <div>
+              <p>wallet Name : wallet Name</p>
+              <p>Owner : Owner</p>
+              <p>mobile number : +966 0592596154</p>
+            </div>
+            <div class="h-auto d-flex flex-column justify-content-between">
+              <div class="dropdown">
+                <button class="btn " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  <img src="images/dots.png" alt="dots" />
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                  <button class="dropdown-item"><i class="bi bi-pencil-square"></i> Edit</button>
+                  <button class="dropdown-item" data-toggle="modal" data-target="#myModal"><i class="bi bi-trash"></i>
+                    Delete</button>
+                </div>
+              </div>
+
+              <div><img src="images/red.png" alt="red circle" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-light-red text-danger rounded fw-semibold mt-4">
+        add new method
+      </button>
+    </section>
+
+
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body py-5">
+            <p class="text-center fw-semibold">Are you sure to remove this method ?</p>
+          </div>
+          <div class="d-flex justify-content-center gap-5 pb-5">
+            <button type="button" class="btn btn-light " data-dismiss="modal">Cancle</button>
+            <button type="button" class="btn btn-main-red px-4" data-dismiss="modal">Ok</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--! to here -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
